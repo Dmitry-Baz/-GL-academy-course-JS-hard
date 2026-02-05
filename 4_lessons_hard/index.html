@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обрезка текста</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Обрезка текста до 30 символов</h1>
+        
+        <div class="input-group">
+            <label for="textInput">Введите текст:</label>
+            <textarea id="textInput" placeholder="Введите любой текст здесь..."></textarea>
+        </div>
+
+        <button onclick="processText()">Обработать текст</button>
+
+        <div id="result" class="result"></div>
+
+        <div class="example">
+            <h4> Примеры:</h4>
+            <p><strong>Короткий текст:</strong> "Привет, мир!" → "Привет, мир!"</p>
+            <p><strong>Длинный текст:</strong> "Это очень длинный текст, который содержит более тридцати символов" → "Это очень длинный текст, кото..."</p>
+            <p><strong>С пробелами:</strong> "   Текст с пробелами   " → "Текст с пробелами"</p>
+        </div>
+    </div>
+
+    <script src="4_lessons.js"></script>
+</body>
+</html>
